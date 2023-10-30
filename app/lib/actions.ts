@@ -71,6 +71,7 @@ export async function updateInvoice(formData: FormData) {
 const DeleteInvoice = InvoiceSchema.pick({ id: true });
 
 export async function deleteInvoice(formData: FormData) {
+
     try {
         const id = formData.get('id')?.toString();
         await sql`DELETE FROM invoices WHERE id = ${id}`;
