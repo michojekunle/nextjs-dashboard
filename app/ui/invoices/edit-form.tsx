@@ -10,6 +10,7 @@ import {
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 
+
 export default function EditInvoiceForm({
   invoice,
   customers,
@@ -18,7 +19,7 @@ export default function EditInvoiceForm({
   customers: CustomerField[];
 }) {
   return (
-    <form>
+    <form action={updateInvoice}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Invoice ID */}
         <input type="hidden" name="id" value={invoice.id} />
