@@ -130,7 +130,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
             {state.errors?.status ? (
               <div
-                id="customer-error"
+                id="invoice-status-error"
                 aria-live="polite"
                 className="mt-2 text-sm text-red-500"
               >
